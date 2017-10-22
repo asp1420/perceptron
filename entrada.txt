@@ -85,4 +85,4 @@ n1(1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0)
 
 N[n1]
 
-+ Nota: Los resultados de la prueba se encuentran en el archivo resultados.txt
++ Nota: Los resultados de la prueba se encuentran en el archivo resultado.txt
