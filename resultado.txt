@@ -6,30 +6,30 @@ Resultados después de la ejecución. Se procesa la etapa de entrenamiento, se p
 
 + Error obtenido y salidas.
 
-error=9.97548e-06
+error=9.96881e-06
 
 + Salidas del entrenamiento (usando entrada original, sin ruido)
 
 Y=
-   0.0543
-   0.1984
-   0.3999
-   0.6037
-   0.7809
+   0.0554
+   0.1980
+   0.4001
+   0.6032
+   0.7813
 
 Valores aproximados al objetivo:
-0.0543 ~ 0
-0.1984 ~ 2
-0.3999 ~ 4
-0.6037 ~ 6
-0.7809 ~ 8
+0.0554 ~ 0
+0.1980 ~ 2
+0.4001 ~ 4
+0.6032 ~ 6
+0.7813 ~ 8
 
 Se generan salidas aproximadas al objetivo con un error para convergencia de 0.00001 y una tasa de aprendizaje de 0.4.
 
 + Resultado con entrada ruidosa
 
 Y=
-   0.0659
+   0.0762
 
 0.0659 ~ 0
 
