@@ -12,7 +12,7 @@ Adaline::Adaline(arma::mat X, arma::mat t)
 void Adaline::train(void)
 {
     double error = 0.0;
-    arma::vec e;
+    arma::vec e_va;
 
     do
     {
@@ -21,12 +21,12 @@ void Adaline::train(void)
         {
             arma::mat o = Activation::sigmoid(X.row(i) * W.t() + b);
             arma::mat y = Activation::dSigmoid(o);
-            arma::mat g = t(i) - o;
-            W = W+(X.row(i)*eta*g(0)*y(0));
-            b = b+(eta*g(0)*y);
-            e(i) = pow(g(0), 2);
+            arma::mat e = t(i) - o;
+            W = W+(X.row(i)*eta*e(0)*y(0));
+            b = b+(eta*e(0)*y);
+            e_va(i) = pow(e(0), 2);
         }
-        error = arma::sum(e);
+        error = arma::sum(e_va);
         std::cout <<"=" <<error <<std::endl;
     }while(error > minError);
 }
