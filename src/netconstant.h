@@ -4,7 +4,7 @@
 class NetConstant {
 
 public:
-    static constexpr double eta = 0.5;
+    static constexpr double eta = 0.05;
     static constexpr double minError = 0.001;
 };
 
