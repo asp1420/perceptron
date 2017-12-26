@@ -5,8 +5,9 @@ SimplePerceptron::SimplePerceptron(arma::mat X, arma::mat t)
     this->X = X;
     this->t = t;
     arma::arma_rng::set_seed_random();
-    W = arma::randu(t.n_cols,X.n_cols);
-    b = 1;
+    //W = arma::randu(t.n_cols,X.n_cols);
+    W <<0.1 <<0.1 <<arma::endr;
+    b = 0.1;
     std::cout <<W <<b;
 }
 
