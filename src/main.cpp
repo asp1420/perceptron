@@ -62,17 +62,17 @@ int main(int argc, char *argv[])
 
     arma::mat X3;
     X3
-    <<0 <<0 <<arma::endr
-    <<0 <<1 <<arma::endr
-    <<1 <<0 <<arma::endr
-    <<1 <<1 <<arma::endr;
+    <<-0.5 <<-0.5 <<arma::endr
+    <<-0.5 <<0.5 <<arma::endr
+    <<0.3 <<-0.5 <<arma::endr
+    <<-0.1 <<1 <<arma::endr;
 
     arma::mat t3;
     t3
+    <<1 <<arma::endr
+    <<1 <<arma::endr
     <<0 <<arma::endr
-    <<0 <<arma::endr
-    <<0 <<arma::endr
-    <<1 <<arma::endr;
+    <<0 <<arma::endr;
 
     /**
      * Simple perceptron
